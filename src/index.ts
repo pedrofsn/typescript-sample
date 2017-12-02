@@ -6,4 +6,4 @@ class Hello {
 
 const hello = new Hello()
 
-console.log(hello.greet("pedrofsn"))
+console.log(hello.greet("Pedro Francisco de Sousa Neto"))
