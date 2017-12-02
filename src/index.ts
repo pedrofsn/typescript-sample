@@ -6,4 +6,10 @@ class Hello {
 
 const hello = new Hello()
 
-console.log(hello.greet("Pedro Francisco de Sousa Neto"))
+console.log(hello.greet("pedrofsn"))
+
+declare const module: any
+
+if(module.hot) {
+    module.hot.accept()
+}
