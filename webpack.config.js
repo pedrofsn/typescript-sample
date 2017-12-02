@@ -1,12 +1,17 @@
+const path = require("path")
+
 module.exports = {
-    entry: "./dist/index.js",
+    entry: {
+        sample1: "./dist/index.js"
+    },
     output: { 
-        filename: "./www/js/sample1.js" 
+        filename: "[name].js",
+        path: path.resolve("./www/js"),
+        publicPath: "/js"
     },
     devServer: {
-        contentBase: "./www",
+        contentBase: path.resolve("./www"),
         compress: true,
-        watchContentBase: true,
         hot: true,
         port: 5000
     }
